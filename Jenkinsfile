@@ -26,6 +26,12 @@ git url: 'https://github.com/Darshan429/final4.git', branch: 'main'
                 sh 'mvn test'
             }
         }
+
+        stage('Run'){
+            steps{
+                sh 'mvn exec:java -Dexec.mainClass="com.example.App"'
+            }
+        }
     }
 
     post {
