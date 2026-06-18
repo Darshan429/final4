@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Recommended if repo is configured in Jenkins
-                checkout scm
+    
 git url: 'https://github.com/Darshan429/final4.git', branch: 'main'
             }
         }
